@@ -1,2 +1,2 @@
 language = "go"
-run = "go run '1.4.1 Lab.go'"
+run = "go run '1.4.2new Lab.go'"
