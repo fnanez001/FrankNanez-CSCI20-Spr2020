@@ -1,2 +1,2 @@
 language = "go"
-run = "go run 'Song Lyrics.go'"
+run = "go run 'averageQuizscore.go'"
