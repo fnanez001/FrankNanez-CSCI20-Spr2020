@@ -23,76 +23,77 @@ func main() {
   fmt.Scanln(&income)
 
  // create if statements for status and else if for income brackets and amounts owed.
-  if status == "A" {
+  if status == "A" && status != "B" && status != "C" && status != "D" {
      fmt.Println("You selected the filing status Single.")
-     }else if income >= 0 && income <= 9700 && status != "B" && status != "C" && status != "D"{
+     if income >= 0 && income <= 9700 {
      fmt.Println("$",income*.1,"Is the amount owed and you would be in the 10% tax bracket.")
-     }else if income >= 9701 && income <= 39475 && status != "B" && status != "C" && status != "D"{
+     }else if income >= 9701 && income <= 39475 {
      fmt.Println("$",income*.12,"Is the amount owed and you would be in the 12% bracket")
-     }else if income >= 39476 && income <= 84200 && status != "B" && status != "C" && status != "D"{
+     }else if income >= 39476 && income <= 84200 {
      fmt.Println("$",income*.22,"Is the amount owed and you would be in the 22% tax bracket.")
-     }else if income >= 84201 && income <= 160725 && status != "B" && status != "C" && status != "D"{
+     }else if income >= 84201 && income <= 160725 {
      fmt.Println("$",income*.24,"Is the amount owed and you would be in the 24% tax bracket.")
-     }else if income >= 160726 && income <= 204100 && status != "B" && status != "C" && status != "D"{
+     }else if income >= 160726 && income <= 204100 {
      fmt.Println("$",income*.32,"is the amount owed and you would be in the 32% tax bracket.")
-     }else if income >= 204101 && income <= 510300 && status != "B" && status != "C" && status != "D"{
+     }else if income >= 204101 && income <= 510300 {
      fmt.Println("$",income*35,"Is the amount owed and you would be in the 35% tax bracket.")
-     }else if income >= 510301 && status != "B" && status != "C" && status != "D"{
+     }else if income >= 510301 {
      fmt.Println("$",income*.37,"Is the amount owed and you would be in the 37% tax bracket.")
      }
-  
-  if status == "B" {
+   }
+  if status == "B" && status != "A" && status != "C" && status != "D"{
      fmt.Println("You selected the filing status Married and filing jointly.")
-     }else if income >= 0 && income <= 19400 && status != "A" && status != "C" && status != "D"{
+     if income >= 0 && income <= 19400 {
      fmt.Println("$",income*.1,"Is the amount owed and you would be in the 10% tax bracket.")
-     }else if income >= 19401 && income <= 78950 && status != "A" && status != "C" && status != "D"{
+     }else if income >= 19401 && income <= 78950 {
      fmt.Println("$",income*.12,"Is the amount owed and you would be in the 12% bracket")
-     }else if income >= 78951 && income <= 168400 && status != "A" && status != "C" && status != "D"{
+     }else if income >= 78951 && income <= 168400 {
      fmt.Println("$",income*.22,"Is the amount owed and you would be in the 22% tax bracket.")
-     }else if income >= 168401 && income <= 321450 && status != "A" && status != "C" && status != "D"{
+     }else if income >= 168401 && income <= 321450 {
      fmt.Println("$",income*.24,"Is the amount owed and you would be in the 24% tax bracket.")
-     }else if income >= 321451 && income <= 408200 && status != "A" && status != "C" && status != "D"{
+     }else if income >= 321451 && income <= 408200 {
      fmt.Println("$",income*.32,"is the amount owed and you would be in the 32% tax bracket.")
-     }else if income >= 408201 && income <= 612350 && status != "A" && status != "C" && status != "D"{
+     }else if income >= 408201 && income <= 612350 {
      fmt.Println("$",income*35,"Is the amount owed and you would be in the 35% tax bracket.")
-     }else if income >= 612351 && status != "A" && status != "C" && status != "D"{
+     }else if income >= 612351 {
      fmt.Println("$",income*.37,"Is the amount owed and you would be in the 37% tax bracket.")
      }
-   
-  if status == "C" {
+   }
+  if status == "C" && status != "A" && status != "B" && status != "D"{
      fmt.Println("You selected the filing status Head of household.")
-     }else if income >= 0 && income <= 13850 && status != "A" && status != "B" && status != "D"{
+     if income >= 0 && income <= 13850 {
      fmt.Println("$",income*.1,"Is the amount owed and you would be in the 10% tax bracket.")
-     }else if income >= 13851 && income <= 52850 && status != "A" && status != "B" && status != "D"{
+     }else if income >= 13851 && income <= 52850 {
      fmt.Println("$",income*.12,"Is the amount owed and you would be in the 12% bracket")
-     }else if income >= 52851 && income <= 84200 && status != "A" && status != "B" && status != "D"{
+     }else if income >= 52851 && income <= 84200 {
      fmt.Println("$",income*.22,"Is the amount owed and you would be in the 22% tax bracket.")
-     }else if income >= 84201 && income <= 160700 && status != "A" && status != "B" && status != "D"{
+     }else if income >= 84201 && income <= 160700 {
      fmt.Println("$",income*.24,"Is the amount owed and you would be in the 24% tax bracket.")
-     }else if income >= 160701 && income <= 204100 && status != "A" && status != "B" && status != "D"{
+     }else if income >= 160701 && income <= 204100 {
      fmt.Println("$",income*.32,"is the amount owed and you would be in the 32% tax bracket.")
-     }else if income >= 204101 && income <= 510300 && status != "A" && status != "B" && status != "D"{
+     }else if income >= 204101 && income <= 510300 {
      fmt.Println("$",income*35,"Is the amount owed and you would be in the 35% tax bracket.")
-     }else if income >= 510301 && status != "A" && status != "B" && status != "D"{
+     }else if income >= 510301 {
      fmt.Println("$",income*.37,"Is the amount owed and you would be in the 37% tax bracket.")
      }
-  
-  if status == "D" {
+  }
+  if status == "D" && status != "A" && status != "B" && status != "C"{
      fmt.Println("You selected the filing status Married filing separately.")
-     }else if income >= 0 && income <= 9700 && status != "A" && status != "B" && status != "C"{
+     if income >= 0 && income <= 9700 {
      fmt.Println("$",income*.1,"Is the amount owed and you would be in the 10% tax bracket.")
-     }else if income >= 9701 && income <= 39475 && status != "A" && status != "B" && status != "C"{
+     }else if income >= 9701 && income <= 39475 {
      fmt.Println("$",income*.12,"Is the amount owed and you would be in the 12% bracket")
-     }else if income >= 39476 && income <= 84200 && status != "A" && status != "B" && status != "C"{
+     }else if income >= 39476 && income <= 84200 {
      fmt.Println("$",income*.22,"Is the amount owed and you would be in the 22% tax bracket.")
-     }else if income >= 84201 && income <= 160725 && status != "A" && status != "B" && status != "C"{
+     }else if income >= 84201 && income <= 160725 {
      fmt.Println("$",income*.24,"Is the amount owed and you would be in the 24% tax bracket.")
-     }else if income >= 160726 && income <= 204100 && status != "A" && status != "B" && status != "C"{
+     }else if income >= 160726 && income <= 204100 {
      fmt.Println("$",income*.32,"is the amount owed and you would be in the 32% tax bracket.")
-     }else if income >= 204101 && income <= 306175 && status != "A" && status != "B" && status != "C"{
+     }else if income >= 204101 && income <= 306175 {
      fmt.Println("$",income*35,"Is the amount owed and you would be in the 35% tax bracket.")
-     }else if income >= 306176 && status != "A" && status != "B" && status != "C"{
+     }else if income >= 306176 {
      fmt.Println("$",income*.37,"Is the amount owed and you would be in the 37% tax bracket.")
      }
+  }
   
 }
