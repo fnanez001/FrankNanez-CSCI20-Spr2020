@@ -1,6 +1,6 @@
-// Programmer name: __________
-// Date completed:  __________
-// Description: ___________________________
+// Frank Nanez
+// 2-25-20
+// create a rock,paper, scissors game with random numbers and if/else statements
 
 package main
 
