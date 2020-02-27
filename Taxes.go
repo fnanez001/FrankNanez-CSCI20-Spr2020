@@ -13,7 +13,7 @@ func main() {
 
  // Prompt user variables needed
   fmt.Println("This program will determine your taxes owed and the tax bracket based on your filing status and income")
-  fmt.Println("Please enter the corresponding letter to your filing status; A-Single, B-Marries filing joingtly, C-Head of household, D-Married filing separately")
+  fmt.Println("Please enter the corresponding letter to your filing status; A-Single, B-Married filing joingtly, C-Head of household, D-Married filing separately")
 
   // have user enter their status letter and income
   fmt.Scanln(&status)
@@ -34,7 +34,7 @@ func main() {
      }else if income >= 84201 && income <= 160725 {
      fmt.Println("$",income*.24,"Is the amount owed and you would be in the 24% tax bracket.")
      }else if income >= 160726 && income <= 204100 {
-     fmt.Println("$",income*.32,"is the amount owed and you would be in the 32% tax bracket.")
+     fmt.Println("$",income*.32,"Is the amount owed and you would be in the 32% tax bracket.")
      }else if income >= 204101 && income <= 510300 {
      fmt.Println("$",income*35,"Is the amount owed and you would be in the 35% tax bracket.")
      }else if income >= 510301 {
