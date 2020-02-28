@@ -28,7 +28,7 @@ func main() {
      if income >= 0 && income <= 9700 {
      fmt.Println("$",income*.1,"Is the amount owed and you would be in the 10% tax bracket.")
      }else if income >= 9701 && income <= 39475 {
-     fmt.Println("$",income*.12,"Is the amount owed and you would be in the 12% bracket")
+     fmt.Println("$",((income-9700)*.12+income*.1),"Is the amount owed and you would be in the 12% bracket")
      }else if income >= 39476 && income <= 84200 {
      fmt.Println("$",income*.22,"Is the amount owed and you would be in the 22% tax bracket.")
      }else if income >= 84201 && income <= 160725 {
