@@ -14,16 +14,16 @@ func main() {
     "JaShen",
     }
 
-  var battingAvg = [4] float32 {
+  var battingAvg = [4] float64 {
     1.2,
     2.1,
     4.5,
     1.1,
     }
   
-  var sluggingAvg = [4] float32 {
-    1.1,
-    4.3,
+  var sluggingAvg = [4] float64 {
+    6.1,
+    .99,
     5.1,
     1.0,
     }
@@ -34,12 +34,51 @@ func main() {
   }
 
   highestB := battingAvg[0]
-  
-  for i := 0; i <+ 3; i++ {
-    battingAvg[i] > highestB
-    highestB = battingAvg[i]
-    fmt.Println(highestB[i])
+  highestI := 0
+
+  for i := 0; i <= 3; i++ {
+    if battingAvg[i] > highestB {
+    highestB = battingAvg[i] 
+    highestI = i
+    }
+    
   }
- 
+  fmt.Println("Highest batting average: ",player[highestI],",", battingAvg[highestI],",", sluggingAvg[highestI])
+
+  highestS := sluggingAvg[0]
+  highestI = 0
+
+  for i := 0; i <= 3; i++ {
+    if sluggingAvg[i] > highestS {
+    highestS = sluggingAvg[i]
+    highestI = i
+    }
+
+  }
+  fmt.Println("Highest slugging average: ",player[highestI],",", battingAvg[highestI],",", sluggingAvg[highestI])
+
+  lowestB := battingAvg[0]
+  lowestI := 0
+
+  for i := 0; i <= 3; i++ {
+    if battingAvg[i] < lowestB {
+      lowestB = battingAvg[i]
+      lowestI = i
+    }
+
+  }
+  fmt.Println("Lowest batting average:",player[lowestI],",",battingAvg[lowestI],",", sluggingAvg[lowestI])
+
+  lowestS := sluggingAvg[0]
+  lowestI = 0
+
+  for i := 0; i <= 3; i++ {
+   if sluggingAvg[i] < lowestS {
+     lowestS = sluggingAvg[i]
+     lowestI = i
+   }
+
+  }
+  fmt.Println("Lowest slugging average:",player[lowestI],",",battingAvg[lowestI],",", sluggingAvg[lowestI])
 
 }
