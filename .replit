@@ -1,2 +1,2 @@
 language = "go"
-run = "go run 'Taxes.go'"
+run = "go run '2.5.1 Lab.go'"
