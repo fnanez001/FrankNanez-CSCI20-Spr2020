@@ -37,7 +37,7 @@ func main() {
   for j := 0; j <= 9; j++ {
     if board[j] != "o"{
     }
-   fmt.Println("Game is over!")
+   
   }
-  
+  fmt.Println("Game is over!")
 }

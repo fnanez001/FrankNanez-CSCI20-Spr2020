@@ -1,2 +1,2 @@
 language = "go"
-run = "go run 'Tic Tac Toe.go'"
+run = "go run 'NIM.go'"
