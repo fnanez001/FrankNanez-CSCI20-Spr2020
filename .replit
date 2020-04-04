@@ -1,2 +1,2 @@
 language = "go"
-run = "go run '3.2.1 lab1.go'"
+run = "go run 'random feedback.go'"
