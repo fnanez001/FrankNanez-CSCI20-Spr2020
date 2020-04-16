@@ -1,2 +1,2 @@
 language = "go"
-run = "go run '3.6.1 FOP1.go'"
+run = "go run '3.6.2 distance calculator.go'"
