@@ -2,6 +2,7 @@
 // 4-16-20
 // create a program that takes radius of a well and total depth in feet and calculate the total gallons of the well.
 
+// set up your packages and import necessary packages
 package main
 
 import (
@@ -9,9 +10,10 @@ import (
   "math"
 )
 
+// create a constant to use for Pi in your area of a circle
 const Pi  = 3.14159265358979323846264338327950288419716939937510582097494459
 
-
+// set up a function for finding a the cubic ft of the well (minus) the water depth if possible to get an accurate amount of gallons in the end.
 func cubicF( rad float64, dep float64, wDep float64) float64 {
   radInft := rad/12
   area := (Pi*(radInft*radInft))
@@ -20,11 +22,13 @@ func cubicF( rad float64, dep float64, wDep float64) float64 {
   return cubic
 }
 
+// create a function to convert the cubic feet to gallons
 func convertGal(cub float64) float64 {
   gallons := cub*7.481
   return gallons
 }
 
+// use main func to prompt user for radius of well, depth, and the depth down to the water table. then call functions you created above to get the accurate amount of gallons for users well
 func main() {
   var radius float64
   var depth float64
