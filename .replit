@@ -1,2 +1,2 @@
 language = "go"
-run = "go run '3.6.2 tip calculator.go'"
+run = "go run 'Well Water.go'"
