@@ -7,12 +7,11 @@ package main
 import "fmt"
 
 type EggCarton struct {
-  -brownEggs: int
-  -whiteEggs:int
+  brownEggs: int
+  whiteEggs:int
 }
 
-+EggCarton()
-+EggCarton(brownEggs, whiteEggs)
+
 +setBrownEggs(brownEggs)
 +setWhiteEggs(whiteEggs)
 +addEggs(eggs, type)
