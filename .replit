@@ -1,2 +1,2 @@
 language = "go"
-run = "go run 'Well Water.go'"
+run = "go run 'Planet Struct.go'"
