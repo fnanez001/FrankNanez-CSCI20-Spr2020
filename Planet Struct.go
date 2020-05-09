@@ -81,6 +81,7 @@ func main(){
      fmt.Println("the gravity on that planet is",planet[x].Gravity,"Compared to Earth's.")
      newWeight := weightOnplanet(planet[x].Gravity,weight)
      fmt.Println("Your weight would be:",newWeight,"lbs.")
+      i = 9
     }
     x=x+1
   }
