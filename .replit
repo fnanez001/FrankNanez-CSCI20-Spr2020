@@ -1,2 +1,2 @@
 language = "go"
-run = "go run 'Planet Struct.go'"
+run = "go run 'baseball stats objectupdate.go'"
